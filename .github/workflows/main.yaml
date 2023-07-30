@@ -1,14 +1,17 @@
 name: main
 on:  
   push:
-      braches: [main]
+    braches:
+      - "main"
 
 jobs:
   build-and-test:
     uses: ./.github/workflows/base.yaml
   
   release:
+    needs: build-and-test
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     steps:
     - uses: actions/checkout@v2
     - name: Bump version and push tag

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/HarryTennent/noimportsasvar/internal/analyzer"
+	"github.com/HarryTennent/noimportsasvar/pkg/analyzer"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 

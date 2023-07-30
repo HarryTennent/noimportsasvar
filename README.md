@@ -1,3 +1,5 @@
+Archived: This linter already exists https://revive.run/r#import-shadowing
+
 # noimportsasvar
 
 ## Overview
